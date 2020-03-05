@@ -1,3 +1,9 @@
 **Pre-requisites**
 
-This scenario provides a re-cap of this course and some guidelines about where to go from here.
+This scenario provides:
+ 
+- A re-cap of this course
+- Pointers to additional platforms you may want to explore
+- Advantages of Cloud Native Buildpacks over common alternatives (Dockerfile and Jib)
+- Summary of links provided throughout this course
+
