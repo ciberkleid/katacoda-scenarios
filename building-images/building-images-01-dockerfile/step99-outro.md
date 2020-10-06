@@ -1,0 +1,5 @@
+That concludes the lesson on Dockerfile. To recap, we learned about the basic structure of a Dockerfile as well as some best practices to keep in mind when authoring Dockerfiles. We also learned about the layered nature of images and how layers can be used as cache to improve build time, including tips on structuring your Dockerfiles to use cache effectively. Finally, you learned a couple of ways to inspect images.
+
+Even with this introduction to Dockerfile, you can probably already appreciate that working with Dockerfiles is a double-edged sword. On one hand, a Dockerfile is simply a script in which you can do nearly anything you want, so you have full control over your application’s behavior and environment. On the other, each Dockerfile author must become knowledgeable about many low level details, and there is plenty of room for error. 
+
+Higher-level tools aim to abstract away some of these challenges. The remaining lessons in this course cover a couple of these alternatives.

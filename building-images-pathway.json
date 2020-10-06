@@ -1,0 +1,41 @@
+{
+  "title": "Building Images",
+  "description": "Learn about building container images using Dockerfile, Jib, and Cloud Native Buildpacks",
+  "courses": [
+    {
+      "course_id": "building-images-00-course-intro",
+      "title": "Building Images - Course Intro",
+      "description": "Introduction to Building Images"
+    },
+    {
+      "course_id": "building-images-01-dockerfile",
+      "title": "Building Images with Dockerfile",
+      "description": "Learn fundamentals and best practices for Dockerfile"
+    },
+    {
+      "course_id": "building-images-02-jib",
+      "title": "Cloud Native Buildpacks with Spring Boot",
+      "description": "Learn about the Jib plugin for Maven and Gradle"
+    },
+    {
+      "course_id": "building-images-03-buildpacks-with-pack",
+      "title": "Cloud Native Buildpacks with pack",
+      "description": "Learn about Cloud Native Buildpacks through the use of the pack CLI"
+    },
+    {
+      "course_id": "building-images-04-buildpacks-with-spring-boot",
+      "title": "Cloud Native Buildpacks with Spring Boot",
+      "description": "Learn about Spring Boot's built-in support for Cloud Native Buildpacks for Maven and Gradle"
+    },
+    {
+      "course_id": "building-images-05-buildpacks-with-kpack",
+      "title": "Cloud Native Buildpacks as a Service with kpack",
+      "description": "Learn how to run Cloud Native Buildpacks as a Service with kpack"
+    },
+    {
+      "course_id": "building-images-99-course-summary",
+      "title": "Building Images - Course Summary",
+      "description": "Where to from here?"
+    }
+  ]
+}

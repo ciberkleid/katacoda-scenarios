@@ -1,0 +1,38 @@
+#!/bin/bash
+
+mkdir -p /root/init-env
+cd /root/init-env
+
+# Redirect output to log file
+exec &>> /root/init-env/init-env.log
+
+printf "" > /root/init-env/init-env.status
+echo "$(date)"
+########## NO CHANGES ABOVE THIS LINE ##########
+
+echo "### Creating workspace directory (cd into it in init-foreground, not here)"
+mkdir /workspace
+echo "### Finished creating workspace directory"
+
+echo "Installing bat CLI"
+BAT_VERSION=0.15.4
+curl -LO https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz
+sudo tar xvzf bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz -C /usr/local/bin/ bat
+echo "Finished installing bat CLI"
+
+echo "Cloning & setting up sample app"
+git clone https://github.com/ciberkleid/hello-go.git /workspace/hello-go
+echo "echo \"mwahaha!\"; return;" > /workspace/hello-go/src/README.md
+base64 /dev/urandom | head -c 10000 >> /workspace/hello-go/src/README.md
+echo "Finished cloning  & setting up sample app"
+
+# Leave this as the last task in this script
+echo "### Waiting for Kubernetes nodes 'ready' status"
+until `which kubectl`; do sleep 1; done;
+JSONPATH='{range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}'
+until kubectl get nodes -o jsonpath="$JSONPATH" | grep "Ready=True"; do sleep 1; done
+echo "### Finished waiting for Kubernetes nodes 'ready' status"
+
+########## NO CHANGES BELOW THIS LINE ##########
+# The following must be the last line
+echo "done" >> /root/init-env/init-env.status
