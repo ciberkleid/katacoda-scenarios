@@ -5,7 +5,9 @@ Please visit the [intro scenario](https://www.katacoda.com/ciberkleid/courses/bu
 
 **Scenario Overview**
 
-In this scenario, you will learn about building images with Dockerfile. Specifically:
+In this scenario, you will learn about building images with Dockerfile. 
+
+Specifically, this scenario will cover:
 
 * Basic syntax of Dockerfiles
 * Configuring the application launch command
@@ -13,7 +15,7 @@ In this scenario, you will learn about building images with Dockerfile. Specific
 * Controlling the build context
 * Checking application shutdown behavior
 * Docker image layers
-* Maximize build cache
+* Maximizing build cache
 * Setting the runtime user
 * Reducing image size and surface area using multi-stage builds
 * Inspecting images

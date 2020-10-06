@@ -15,9 +15,12 @@ mkdir /workspace
 echo "### Finished creating workspace directory"
 
 echo "Installing bat CLI"
-BAT_VERSION=0.15.4
+BAT_VERSION=0.16.0
 curl -LO https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz
-sudo tar xvzf bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz -C /usr/local/bin/ bat
+tar xvzf bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz bat-v$BAT_VERSION-x86_64-unknown-linux-gnu/bat
+sudo mv bat-v$BAT_VERSION-x86_64-unknown-linux-gnu/bat /usr/local/bin/
+rm bat-v$BAT_VERSION-x86_64-unknown-linux-gnu.tar.gz
+rm -rf bat-v$BAT_VERSION-x86_64-unknown-linux-gnu/
 echo "Finished installing bat CLI"
 
 echo "Cloning & setting up sample app"

@@ -2,7 +2,7 @@
 
 Objective:
 
-Learn the syntax of Dockerfiles, focusing on a handful of basic Dockerfile commands and focusing on controlling the application launch behavior. 
+Learn the syntax of Dockerfiles, focusing on a handful of basic Dockerfile commands. 
 Learn how to execute your Dockerfiles to build images. 
 Understand some of the benefits of packaging an application as an image.
 
@@ -20,9 +20,10 @@ It consists of a series of commands, which are executed in order from top to bot
 Copy the first sample Dockerfile to the application source code directory and review the contents.
 
 ```
-cp /workspace/hello-go/Dockerfiles/Dockerfile .
+cd /workspace/hello-go/src
+cp ../Dockerfiles/Dockerfile .
 bat Dockerfile
-```
+```{{execute}}
 
 Notice that each command in the script starts with a valid Dockerfile instruction. 
 By convention, the instructions are capitalized for readability. 
