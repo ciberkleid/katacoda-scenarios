@@ -7,5 +7,3 @@ The scenarios in this course can be completed independently and in any order you
 **Scenario Overview**
 
 This lesson provides a brief introduction to containerization and sets the groundwork for the rest of the course.
-
-This lesson also introduces a sample application that will be used throughout the course.
