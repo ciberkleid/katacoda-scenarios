@@ -1,5 +1,5 @@
 {
-  "title": "Cloud Native Buildpacks with Spring Boot",
+  "title": "Building Images for Java Apps with Jib",
   "description": "Learn about the Jib plugin for Maven and Gradle",
   "difficulty": "Beginner",
   "time": "30",

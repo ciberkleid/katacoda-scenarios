@@ -1,5 +1,5 @@
 {
-  "title": "Cloud Native Buildpacks with Spring Boot",
+  "title": "Building Images for Spring Boot Apps with Cloud Native Buildpacks",
   "description": "Learn about Spring Boot's built-in support for Cloud Native Buildpacks for Maven and Gradle",
   "difficulty": "Beginner",
   "time": "30",

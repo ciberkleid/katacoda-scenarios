@@ -1,5 +1,5 @@
 {
-  "title": "Cloud Native Buildpacks with pack",
+  "title": "Building Images with Cloud Native Buildpacks & pack",
   "description": "Learn about Cloud Native Buildpacks through the use of the pack CLI",
   "difficulty": "Beginner",
   "time": "30",

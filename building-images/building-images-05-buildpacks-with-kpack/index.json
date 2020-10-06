@@ -1,5 +1,5 @@
 {
-  "title": "Cloud Native Buildpacks as a Service with kpack",
+  "title": "Building Images as a Service with Cloud Native Buildpacks & kpack",
   "description": "Learn how to run Cloud Native Buildpacks as a Service with kpack",
   "difficulty": "Beginner",
   "time": "30",
