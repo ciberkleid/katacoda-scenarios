@@ -14,22 +14,22 @@
     },
     {
       "course_id": "building-images-02-jib",
-      "title": "Cloud Native Buildpacks with Spring Boot",
+      "title": "Building Images for Java Apps with Jib",
       "description": "Learn about the Jib plugin for Maven and Gradle"
     },
     {
       "course_id": "building-images-03-buildpacks-with-pack",
-      "title": "Cloud Native Buildpacks with pack",
+      "title": "Building Images with Cloud Native Buildpacks & pack",
       "description": "Learn about Cloud Native Buildpacks through the use of the pack CLI"
     },
     {
       "course_id": "building-images-04-buildpacks-with-spring-boot",
-      "title": "Cloud Native Buildpacks with Spring Boot",
+      "title": "Building Images for Spring Boot Apps with Cloud Native Buildpacks",
       "description": "Learn about Spring Boot's built-in support for Cloud Native Buildpacks for Maven and Gradle"
     },
     {
       "course_id": "building-images-05-buildpacks-with-kpack",
-      "title": "Cloud Native Buildpacks as a Service with kpack",
+      "title": "Building Images as a Service with Cloud Native Buildpacks & kpack",
       "description": "Learn how to run Cloud Native Buildpacks as a Service with kpack"
     },
     {
