@@ -3,11 +3,6 @@
   "description": "Learn about building container images using Dockerfile, Jib, and Cloud Native Buildpacks",
   "courses": [
     {
-      "course_id": "building-images-00-course-intro",
-      "title": "Building Images - Course Intro",
-      "description": "Introduction to Building Images"
-    },
-    {
       "course_id": "building-images-01-dockerfile",
       "title": "Building Images with Dockerfile",
       "description": "Learn fundamentals and best practices for Dockerfile"
